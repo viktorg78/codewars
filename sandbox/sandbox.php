@@ -38,7 +38,8 @@
 <a href="MyArray\cate8Ex9.php">| Cate 8. Example 9. |</a>
 <a href="MyArray\cate8Ex10.php">| Cate 8. Example 10. |</a>
 <a href="MyArray\cate8Ex11.php">| Cate 8. Example 11. |</a>
-<a href="MyArray\cate8Ex12.php">| Cate 8. Example 12. |(не готов)</a>
+<a href="MyArray\cate8Ex12.php">| Cate 8. Example 12. |</a>
+<a href="MyArray\cate8Ex13.php">| Cate 8. Example 13. |(не готов)</a>
 <div>
 
 </div>
