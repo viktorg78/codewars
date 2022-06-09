@@ -20,9 +20,9 @@ class Example13
         $this->solution();
     }
 
-    private function solution(){
-        $this->ans = array_sum(array_map(function ($n)
-        {
+    private function solution()
+    {
+        $this->ans = array_sum(array_map(function ($n) {
             return pow($n, 2);
         }, $this->data));
     }
