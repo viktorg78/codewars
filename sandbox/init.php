@@ -15,6 +15,11 @@ spl_autoload_register('custom_autoloader');
 function myDamp(array $data)
 {
     echo '<pre>';
-    print_r($data);
+    foreach ($data as $index => $value)
+    {
+        $typeValue = gettype($value);
+        echo "[$index]\t=> $value ($typeValue)\n";
+    }
+//    print_r($data);
     echo '</pre>';
 }
