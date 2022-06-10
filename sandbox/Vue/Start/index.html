@@ -2,18 +2,46 @@
 <html>
 <head>
     <title>My first Vue app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-<div id="app">
+<div id="app" v-bind:title="tit">
     {{ message }}
+    <h1 v-if="status == 1">свойства равно 1</h1>
+    <h1 v-else-if="status == 2">свойства равно 2</h1>
+    <h1 v-else>свойства равно {{status}}</h1>
+
+    <template v-if="status == 1">
+    <h1>заголовок 1</h1>
+    <p>описание 1</p>
+    </template>
+
+    <template v-else>
+    <h1>заголовок 2</h1>
+    <p>описание 2</p>
+    </template>
+
+    <h1 v-show="status">заголовоу с v-show</h1>
+
+    <div v-bind:class="{ active: isActive }">
+
+    </div>
+
+    <h1 v-bind:style="{ color: 'red', width: width + 'px'}">
+        текст
+    </h1>
 </div>
 
 <script>
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            message: 'Hello Vue!',
+            tit: 'заголовок',
+            status: 1,
+            isActive: true,
+            width: 30
         }
     })
 </script>
