@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="high">counter равен {{counter}}</button>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            counter: 1
+        },
+        created: function (){
+            this.counter =3;
+            this.high();
+        },
+        methods: {
+            high: function (){
+                this.counter++;
+            }
+        }
+    })
+</script>
+</body>
+</html>

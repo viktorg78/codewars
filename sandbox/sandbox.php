@@ -18,6 +18,9 @@
 <a href="Vue\Start\index.html">| VUE Start |</a>
 <a href="Vue\Start2\index.html">| VUE Start 2 |</a>
 <a href="Vue\Test1\index.html">| VUE тест 1 |</a>
+<a href="Vue/Test3/index.html">| VUE массивы |</a>
+<a href="Vue/Test4/index.html">| VUE жизненный цикл |</a>
+<a href="Vue/Test5/index.html">| VUE элементы формы |</a>
 <div>
 </div>
 <a href="Loger\index.php">| Логер |</a>

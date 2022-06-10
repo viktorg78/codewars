@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first Vue app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3>{{ textSearch }} (длина: {{textSearch.length}})</h3>
+    <input type="text" size="50" v-model="textSearch">
+
+    <button type="button" v-on:click="getCities">Грузи города</button>
+    <button type="button" v-on:click="getHashtages">Грузи хештеги</button>
+
+    <ul>
+        <li v-for="hashteg in hashtegas">{{hashteg}}</li>
+    </ul>
+
+    <ul>
+        <li v-for="city in cities">{{ city.region }}: {{city.city}}</li>
+    </ul>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            hashtegas:[],
+            cities: [],
+            url: {
+                hashtages: 'https://dka-develop.ru/api?type=hashtag',
+                cities: 'https://dka-develop.ru/api?type=city'
+            },
+            textSearch: ''
+        },
+        watch: {
+            textSearch: function (){
+                if (this.textSearch.length > 3){
+                    this.textSearch = 'меняем содержимое поля из кода';
+                }
+            }
+        },
+        methods: {
+            getHashtages: function (){
+                axios.get(this.url.hashtages).then((response) => {
+                    this.hashtegas = response.data;
+                });
+            },
+            getCities: function (){
+                axios.get(this.url.cities).then((response) => {
+                    this.cities = response.data;
+                });
+            }
+        }
+    })
+</script>
+</body>
+</html>
