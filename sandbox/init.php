@@ -14,6 +14,10 @@ spl_autoload_register('custom_autoloader');
 
 function myDamp(array $data)
 {
+    if (empty($data)){
+        echo 'Пустой массив ';
+    }
+
     echo '<pre>';
     foreach ($data as $index => $value)
     {
