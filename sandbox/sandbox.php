@@ -26,34 +26,35 @@
 <a href="Loger\index.php">| Логер |</a>
 <div>
 </div>
-<a href="api\index.php">| API |</a>
+<a href="api/index.php">| API |</a>
 <div>
 </div>
-<a href="MyArray\index.php">| ARRAY |</a>
-<a href="MyArray\cate8Ex1.php">| Cate 8. Example 1. |</a>
-<a href="MyArray\cate8Ex2.php">| Cate 8. Example 2. |</a>
-<a href="MyArray\cate8Ex3.php">| Cate 8. Example 3. |</a>
-<a href="MyArray\cate8Ex4.php">| Cate 8. Example 4. |</a>
-<a href="MyArray\cate8Ex5.php">| Cate 8. Example 5. |</a>
-<a href="MyArray\cate8Ex6.php">| Cate 8. Example 6. |</a>
-<a href="MyArray\cate8Ex7.php">| Cate 8. Example 7. |</a><br>
-<a href="MyArray\cate8Ex8.php">| Cate 8. Example 8. |</a>
-<a href="MyArray\cate8Ex9.php">| Cate 8. Example 9. |</a>
-<a href="MyArray\cate8Ex10.php">| Cate 8. Example 10. |</a>
-<a href="MyArray\cate8Ex11.php">| Cate 8. Example 11. |</a>
-<a href="MyArray\cate8Ex12.php">| Cate 8. Example 12. |</a>
-<a href="MyArray\cate8Ex13.php">| Cate 8. Example 13. |</a>
-<a href="MyArray\cate8Ex14.php">| Cate 8. Example 14. |</a><br>
-<a href="MyArray\cate8Ex15.php">| Cate 8. Example 15. |</a>
-<a href="MyArray\cate8Ex16.php">| Cate 8. Example 16. |</a>
-<a href="MyArray\cate8Ex17.php">| Cate 8. Example 17. |</a>
-<a href="MyArray\cate8Ex18.php">| Cate 8. Example 18. |</a>
+<a href="MyArray/index.php">| ARRAY |</a>
+<a href="MyArray/cate8Ex1.php">| Cate 8. Example 1. |</a>
+<a href="MyArray/cate8Ex2.php">| Cate 8. Example 2. |</a>
+<a href="MyArray/cate8Ex3.php">| Cate 8. Example 3. |</a>
+<a href="MyArray/cate8Ex4.php">| Cate 8. Example 4. |</a>
+<a href="MyArray/cate8Ex5.php">| Cate 8. Example 5. |</a>
+<a href="MyArray/cate8Ex6.php">| Cate 8. Example 6. |</a>
+<a href="MyArray/cate8Ex7.php">| Cate 8. Example 7. |</a><br>
+<a href="MyArray/cate8Ex8.php">| Cate 8. Example 8. |</a>
+<a href="MyArray/cate8Ex9.php">| Cate 8. Example 9. |</a>
+<a href="MyArray/cate8Ex10.php">| Cate 8. Example 10. |</a>
+<a href="MyArray/cate8Ex11.php">| Cate 8. Example 11. |</a>
+<a href="MyArray/cate8Ex12.php">| Cate 8. Example 12. |</a>
+<a href="MyArray/cate8Ex13.php">| Cate 8. Example 13. |</a>
+<a href="MyArray/cate8Ex14.php">| Cate 8. Example 14. |</a><br>
+<a href="MyArray/cate8Ex15.php">| Cate 8. Example 15. |</a>
+<a href="MyArray/cate8Ex16.php">| Cate 8. Example 16. |</a>
+<a href="MyArray/cate8Ex17.php">| Cate 8. Example 17. |</a>
+<a href="MyArray/cate8Ex18.php">| Cate 8. Example 18. |</a>
 <a href="MyArray/cate8Ex19.php">| Cate 8. Example 19. |</a>
 <a href="MyArray/cate8Ex20.php">| Cate 8. Example 20. |</a>
 <a href="MyArray/cate8Ex21.php">| Cate 8. Example 21. |</a><br>
 <a href="MyArray/cate8Ex22.php">| Cate 8. Example 22. |</a>
 <a href="MyArray/cate8Ex23.php">| Cate 8. Example 23. |</a>
-<a href="MyArray/cate8Ex24.php">| Cate 8. Example 24. |(не готов)</a>
+<a href="MyArray/cate8Ex24.php">| Cate 8. Example 24. |</a>
+<a href="MyArray/cate8Ex25.php">| Cate 8. Example 25. |(не готов)</a>
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
