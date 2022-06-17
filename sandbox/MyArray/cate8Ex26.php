@@ -11,15 +11,12 @@ echo '<div>
 </div>';
 
 echo '<b>Начало.</b><br>';
+$goose = 8;
 $arr = [["name" => "Andre"], ["name" => "Beatrice"], ["name" => "Christina"], ["name" => "Daniel"]];
+echo "гусь = $goose";
 myDampPrint($arr);
+
 echo '<b>ответ: </b>';
-$ex = new \MyArray\Cate8\Example\Example26($arr,9);
-echo $ex->getAns();
+$ex = new \MyArray\Cate8\Example\Example26($arr, $goose);
+echo 'Гусь это: ' . $ex->getAns();
 echo '<br><b>Конец.</b>';
-
-
-
-
-
-

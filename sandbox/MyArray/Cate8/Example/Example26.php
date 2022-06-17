@@ -6,6 +6,7 @@
  * Задача: Учитывая массив объектов Player (массив ассоциативных массивов в PHP) и индекс (на основе 1),
  * вернуть имя выбранного игрока (имя является свойством объектов Player, например Player.name)
  */
+
 namespace MyArray\Cate8\Example;
 
 class Example26
@@ -21,15 +22,25 @@ class Example26
     {
         $this->players = $players;
         $this->goose = $goose;
-        $this->solution();
+        $this->solution2();
     }
 
     private function solution()
     {
-        $krug = (int)($this->goose / count($this->players));
-        $prox = count($this->players) * $krug;
-        $ind = $this->goose - $prox;
-        $this->ans = $this->players[--$ind]["name"];
+        $count = count($this->players);
+        $krug = (int)($this->goose / $count);
+        $prox = $count * $krug;
+        $ind = ($this->goose - $prox);
+        if ($krug > 0 && $ind == 0) {
+            $this->ans = $this->players[--$count]["name"];
+        } else {
+            $this->ans = $this->players[--$ind]["name"];
+        }
+    }
+
+    private function solution2()
+    {
+        $this->ans = $this->players[($this->goose - 1) % count($this->players)]['name'];
     }
 
     public function getAns()
