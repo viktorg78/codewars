@@ -27,3 +27,10 @@ function myDamp(array $data)
 //    print_r($data);
     echo '</pre>';
 }
+
+function myDampPrint(array $data)
+{
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+}
