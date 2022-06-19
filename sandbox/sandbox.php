@@ -21,6 +21,7 @@
 <a href="Vue/Test3/index.html">| VUE массивы |</a>
 <a href="Vue/Test4/index.html">| VUE жизненный цикл |</a>
 <a href="Vue/Test5/index.html">| VUE элементы формы |</a>
+<a href="Vue/formDentaMed/index.html">| Форма с валидацией Данта мед |</a>
 <div>
 </div>
 <a href="Loger\index.php">| Логер |</a>
