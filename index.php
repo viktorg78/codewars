@@ -7,7 +7,7 @@
 </head>
 <body>
 <div>
-    <a href="adminer-4.8.1.php">| БД |</a>
+    <a href="adminer-4.8.1-mysql.php">| БД |</a>
     <a href="index1.html">| настройки |</a>
     <a href="\sandbox\sandbox.php">| Песочница |</a>
 </div>
