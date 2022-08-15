@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
         "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ТЕСТ | Песочница</title>
@@ -23,7 +23,7 @@
 <a href="Vue/Test5/index.html">| VUE элементы формы |</a>
 <div>
 </div>
-<a href="Loger\index.php">| Логер |</a>
+<a href="Loger/index.php">| Логер |</a>
 <div>
 </div>
 <a href="api/index.php">| API |</a>
@@ -58,6 +58,7 @@
 <a href="MyArray/cate8Ex26.php">| Cate 8. Example 26. |</a><br>
 <a href="MyArray/cate7Ex1.php">| Cate 7. Example 1. |</a>
 <a href="MyArray/cate7Ex2.php">| Cate 7. Example 2. |</a>
+<a href="MyArray/cate7Ex3.php">| Cate 7. Example 3. |</a>
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
