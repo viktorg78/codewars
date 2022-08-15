@@ -15,9 +15,9 @@
     <a href="pattern\Factory2\index.php">| Паттерн фабрика 2 |</a>
     <a href="pattern\Factory3\index.php">| Паттерн абстрактная фабрика |</a>
 </div>
-<a href="Vue\Start\index.html">| VUE Start |</a>
-<a href="Vue\Start2\index.html">| VUE Start 2 |</a>
-<a href="Vue\Test1\index.html">| VUE тест 1 |</a>
+<a href="Vue/Start/index.html">| VUE Start |</a>
+<a href="Vue/Start2/index.html">| VUE Start 2 |</a>
+<a href="Vue/Test1/index.html">| VUE тест 1 |</a>
 <a href="Vue/Test3/index.html">| VUE массивы |</a>
 <a href="Vue/Test4/index.html">| VUE жизненный цикл |</a>
 <a href="Vue/Test5/index.html">| VUE элементы формы |</a>
@@ -59,6 +59,7 @@
 <a href="MyArray/cate7Ex1.php">| Cate 7. Example 1. |</a>
 <a href="MyArray/cate7Ex2.php">| Cate 7. Example 2. |</a>
 <a href="MyArray/cate7Ex3.php">| Cate 7. Example 3. |</a>
+<a href="MyArray/cate7Ex4.php">| Cate 7. Example 4. |</a>
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
