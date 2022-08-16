@@ -13,7 +13,8 @@ function custom_autoloader($class)
 spl_autoload_register('custom_autoloader');
 
 /**
- * @param $data void только с одинарными массивами
+ * Пока может работать с одинарными массивами
+ * @param $data mixed
  * @return void
  */
 function myDamp($data)
