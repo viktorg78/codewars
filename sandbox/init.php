@@ -1,6 +1,6 @@
 <?
 
-// Р°РІС‚РѕР·Р°РіСЂСѓР·РєР° РєР»Р°СЃРѕРІ
+// автозагрузка класов
 function custom_autoloader($class)
 {
     $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
@@ -12,20 +12,32 @@ function custom_autoloader($class)
 
 spl_autoload_register('custom_autoloader');
 
-function myDamp(array $data)
+/**
+ * @param $data void только с одинарными массивами
+ * @return void
+ */
+function myDamp($data)
 {
-    if (empty($data)){
-        echo 'РџСѓСЃС‚РѕР№ РјР°СЃСЃРёРІ ';
+    $tupeV = gettype($data);
+    switch ($tupeV) {
+        case 'NULL':
+            echo '<b>NULL</b>' . '<br>';
+            break;
+        case 'array':
+            if (count($data) == 0)
+                echo 'Пустой МАССИВ' . '<br>';
+            else {
+                echo '<pre>';
+                print_r(array_map(function ($value) {
+                        return '<b>' . $value . '</b> (' . gettype($value) . ')';
+                    }, $data)
+                );
+                echo '</pre>';
+            }
+            break;
+        default:
+            echo '<b>'.$data . '</b> (' . $tupeV . ')' . '<br>';
     }
-
-    echo '<pre>';
-    foreach ($data as $index => $value)
-    {
-        $typeValue = gettype($value);
-        echo "[$index]\t=> $value ($typeValue)\n";
-    }
-//    print_r($data);
-    echo '</pre>';
 }
 
 function myDampPrint(array $data)
