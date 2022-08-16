@@ -17,6 +17,8 @@ echo '<br>';
 echo '<b>Начало.</b><br>';
 $a = [78, 117, 110, 99, 104, 117, 107, 115];
 $limit = 200;
+myDamp($a);
+myDamp($limit);
 
 echo '<b>ответ: </b><br>';
 echo  Example12::smallEnough($a, $limit) ? 'true': 'false';
