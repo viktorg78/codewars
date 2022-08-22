@@ -18,7 +18,8 @@ class CreateLogFile
     public function __construct($file, $directory = 'Log')
     {
         $this->file = $file;
-        $this->directory = $_SERVER['DOCUMENT_ROOT'] . $directory . '/';
+        $this->directory = $_SERVER['DOCUMENT_ROOT'] .'/'. $directory . '/';
+        // если не работает, проверь пути записи файла
     }
 
     function __destruct()
@@ -56,6 +57,4 @@ class CreateLogFile
     {
         fwrite($this->fp, $message . "\r\n");
     }
-
-
 }

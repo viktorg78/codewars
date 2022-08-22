@@ -1,7 +1,7 @@
 <?
 include_once($_SERVER['DOCUMENT_ROOT'] . 'sandbox/init.php');
-echo 'Р”РµР»Р°РµРј Р»РѕРіРµСЂ';
+echo 'Делаем логер';
 echo '<br>';
-echo 'РґР»СЏ РїСЂРёРјРµСЂР° Р·Р°Р»РѕРіРёСЂСѓРµРј СЃРѕР·РґР°РЅРЅСѓСЋ РјРЅРѕР№ РѕС€РёР±РєСѓ';
-throw new \Exceptions\MyException('"Р­С‚Рѕ РёСЃРєСѓСЃС‚РІРµРЅРЅР°СЏ РѕС€РёР±РєР°');
+echo 'для примера залогируем созданную мной ошибку';
+throw new \Exceptions\MyException('Это искуственная ошибка 2');
 
