@@ -89,6 +89,7 @@
 <a href="MyArray/cate7Ex31.php">| Cate 7. Example 31. |</a>
 <a href="MyArray/cate7Ex32.php">| Cate 7. Example 32. |</a>
 <a href="MyArray/cate7Ex33.php">| Cate 7. Example 33. |</a>
+<a href="MyArray/cate7Ex34.php">| Cate 7. Example 34. |</a>
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
