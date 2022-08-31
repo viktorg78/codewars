@@ -100,6 +100,7 @@
 <a href="MyArray/cate7Ex42.php">| Cate 7. Example 42. |</a>
 <a href="MyArray/cate7Ex43.php">| Cate 7. Example 43. |</a>
 <a href="MyArray/cate7Ex44.php">| Cate 7. Example 44. |</a>
+<a href="MyArray/cate7Ex45.php">| Cate 7. Example 45. |</a><br>
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
