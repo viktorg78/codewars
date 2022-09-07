@@ -6,7 +6,7 @@ class Example51
 {
     /**
      * @param array $arr
-     * @return int
+     * @return false|float
      */
     public static function sumAverage(array $arr)
     {
