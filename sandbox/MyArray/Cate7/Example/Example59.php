@@ -2,8 +2,6 @@
 
 namespace MyArray\Cate7\Example;
 
-use DateTime;
-
 class Example59
 {
     public static function driver($data)
