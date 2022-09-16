@@ -37,12 +37,20 @@ class CreateLogFile
         return $this->directory;
     }
 
-    public function setDirectory(string $directory)
+    /**
+     * @param $directory string
+     * @return void
+     */
+    public function setDirectory($directory)
     {
         $this->directory = $_SERVER['DOCUMENT_ROOT'] . $directory . '/';
     }
 
-    public function setNameFile(string $file)
+    /**
+     * @param $file string
+     * @return void
+     */
+    public function setNameFile($file)
     {
         $this->file = $file;
     }
@@ -53,7 +61,11 @@ class CreateLogFile
         $this->fp = fopen($this->directory . $this->file, 'a+');
     }
 
-    public function setMessage(string $message)
+    /**
+     * @param $message string
+     * @return void
+     */
+    public function setMessage($message)
     {
         fwrite($this->fp, $message . "\r\n");
     }

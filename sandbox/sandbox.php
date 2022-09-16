@@ -3,27 +3,30 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ТЕСТ | Песочница</title>
+    <title>РўР•РЎРў | РџРµСЃРѕС‡РЅРёС†Р°</title>
 </head>
 <body>
-<div><h1>Песочница</h1></div>
+<div><h1>РџРµСЃРѕС‡РЅРёС†Р°</h1></div>
 <div>
-    <a href="\index.php">| на главную |</a>
+    <a href="\index.php">| РЅР° РіР»Р°РІРЅСѓСЋ |</a>
 </div>
 <div>
-    <a href="pattern\factory\index.php">| Паттерн фабрика |</a>
-    <a href="pattern\Factory2\index.php">| Паттерн фабрика 2 |</a>
-    <a href="pattern\Factory3\index.php">| Паттерн абстрактная фабрика |</a>
+    <a href="pattern\factory\index.php">| РџР°С‚С‚РµСЂРЅ С„Р°Р±СЂРёРєР° |</a>
+    <a href="pattern\Factory2\index.php">| РџР°С‚С‚РµСЂРЅ С„Р°Р±СЂРёРєР° 2 |</a>
+    <a href="pattern\Factory3\index.php">| РџР°С‚С‚РµСЂРЅ Р°Р±СЃС‚СЂР°РєС‚РЅР°СЏ С„Р°Р±СЂРёРєР° |</a>
+</div>
+<div>
+    <a href="App/Di/index.php">DI РљРѕРЅС‚РµР№РЅРµСЂ</a>
 </div>
 <a href="Vue/Start/index.html">| VUE Start |</a>
 <a href="Vue/Start2/index.html">| VUE Start 2 |</a>
-<a href="Vue/Test1/index.html">| VUE тест 1 |</a>
-<a href="Vue/Test3/index.html">| VUE массивы |</a>
-<a href="Vue/Test4/index.html">| VUE жизненный цикл |</a>
-<a href="Vue/Test5/index.html">| VUE элементы формы |</a>
+<a href="Vue/Test1/index.html">| VUE С‚РµСЃС‚ 1 |</a>
+<a href="Vue/Test3/index.html">| VUE РјР°СЃСЃРёРІС‹ |</a>
+<a href="Vue/Test4/index.html">| VUE Р¶РёР·РЅРµРЅРЅС‹Р№ С†РёРєР» |</a>
+<a href="Vue/Test5/index.html">| VUE СЌР»РµРјРµРЅС‚С‹ С„РѕСЂРјС‹ |</a>
 <div>
 </div>
-<a href="Loger/index.php">| Логер |</a>
+<a href="Loger/index.php">| Р›РѕРіРµСЂ |</a>
 <div>
 </div>
 <a href="api/index.php">| API |</a>
@@ -110,7 +113,7 @@
 <a href="MyArray/cate7Ex52.php">| Cate 7. Example 52. |</a>
 <a href="MyArray/cate7Ex53.php">| Cate 7. Example 53. |</a>
 <a href="MyArray/cate7Ex54.php">| Cate 7. Example 54. |</a>
-<a href="MyArray/cate7Ex55.php">| Cate 7. Example 55. (не решил) |</a><br>
+<a href="MyArray/cate7Ex55.php">| Cate 7. Example 55. (РЅРµ СЂРµС€РёР») |</a><br>
 <a href="MyArray/cate7Ex56.php">| Cate 7. Example 56. |</a>
 <a href="MyArray/cate7Ex57.php">| Cate 7. Example 57. |</a>
 <a href="MyArray/cate7Ex58.php">| Cate 7. Example 58. |</a>
@@ -132,7 +135,7 @@
 <a href="MyArray/cate7Ex74.php">| Cate 7. Example 74. |</a>
 <div>
 <div>
-    <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
+    <a href="Tasks/task2.php">| front Р·Р°СЏРІРєРё РЅР° РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РѕРїС‹С‚Р° РїРµРґР°РіРѕРіРѕ |</a>
 </div>
 
 </div>
