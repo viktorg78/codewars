@@ -1,19 +1,25 @@
 <?php
 include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
 
-echo 'РџРёС€РµРј СЃРІРѕР№ DI РєРѕРЅС‚РµР№РЅРµСЂ' . "<br>";
+echo 'Пишем свой DI контейнер' . "<br>";
 
-$di = new \App\Di\Di();
-$di->set('classB', function () {
-    return new \App\Di\B();
-});
+$injections = [
+    'classB' =>  function() {return new \App\Di\B2();},
+    'classB2' => function() {return new \App\Di\B2();},
+//    'classD' => function() {return new \App\Di\D(['текст 1', 'Текст 2']);}
+];
 
-$di->set('classB2', function () {
-    return new \App\Di\B2();
-});
-
+$di = new \App\Di\Di($injections);
+//$di->set('classB', function () {
+//    return new \App\Di\B();
+//});
+//
+//$di->set('classB2', function () {
+//    return new \App\Di\B2();
+//});
+//
 $di->set('classD', function () {
-    return new \App\Di\D(['С‚РµРєСЃС‚ 1', 'РўРµРєСЃС‚ 2']);
+    return new \App\Di\D(['текст 1', 'Текст 2']);
 });
 
 new \App\Di\A($di->get('classB'));

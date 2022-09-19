@@ -11,6 +11,15 @@ class Di
     protected $injections = [];
 
     /**
+     * @param array $injections
+     */
+    public function __construct(array $injections = null)
+    {
+        $this->injections = $injections;
+    }
+
+
+    /**
      * @param $name
      * @param $definition
      * @return void
