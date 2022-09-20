@@ -3,3 +3,18 @@ Exceptions\MyException: [0]: "Это искуственная ошибка
 06.04.2022 22:22 Exceptions\MyException: [0]: "Это искуственная ошибка
 26.05.2022 12:59 Exceptions\MyException: [0]: "Это искуственная ошибка
 30.05.2022 12:59 Exceptions\MyException: [0]: "Это искуственная ошибка
+16.09.2022 10:51 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:52 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:52 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:52 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:52 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:53 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:53 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:55 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:55 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:56 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:56 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 10:56 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 11:01 Exceptions\MyException: [0]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 11:02 Exceptions\MyException: [1]: 'classA1' небыл найден в контейнере зависимостей
+16.09.2022 11:03 Exceptions\MyException: [1]: 'classA1' небыл найден в контейнере зависимостей
