@@ -1,6 +1,6 @@
 <?
 include_once($_SERVER['DOCUMENT_ROOT'] . 'sandbox/init.php');
-echo 'ÐÐ±ÑÑ‚Ñ€Ð°ÐºÑ‚Ð½Ð°Ñ Ñ„Ð°Ð±Ñ€Ð¸ÐºÐ°';
+echo 'Àáñòðàêòíàÿ ôàáðèêà';
 
 $toy = 'Boat';
 

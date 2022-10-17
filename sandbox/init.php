@@ -47,3 +47,13 @@ function myDampPrint(array $data)
     print_r($data);
     echo '</pre>';
 }
+
+/**
+ * Проверка на четное и нечетное число.
+ * Если четное вернет true
+ * @param $n int
+ * @return bool
+ */
+function isOddNumber($n){
+    return $n%2 == 0;
+}

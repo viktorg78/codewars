@@ -4,8 +4,8 @@ use pattern\factory\Factory;
 
 include_once($_SERVER['DOCUMENT_ROOT'] . 'sandbox/init.php');
 
-echo "РџР°С‚РµСЂРЅ С„Р°Р±СЂРёРєР°<br>";
-echo 'Р•СЃС‚СЊ РєР»Р°СЃСЃ РєРѕСЂР°Р±Р»СЊ Рё РїРѕРµР·Рґ. Р С„Р°Р±СЂРёРєР° РєС‚РѕСЂРѕСЏ СЃРѕР·РґР°РµС‚ СЌС‚Рё РєР»Р°СЃСЃС‹'."<br><br>";
+echo "Патерн фабрика<br>";
+echo 'Есть класс корабль и поезд. И фабрика ктороя создает эти классы'."<br><br>";
 
 $factory = new Factory();
 $ship = $factory->createShip();
