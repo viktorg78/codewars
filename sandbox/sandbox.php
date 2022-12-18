@@ -3,36 +3,35 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ТЕСТ | Песочница</title>
+    <title>РўР•РЎРў | РџРµСЃРѕС‡РЅРёС†Р°</title>
 </head>
 <body>
-<div><h1>Песочница</h1></div>
+<div><h1>РџРµСЃРѕС‡РЅРёС†Р°</h1></div>
 <div>
-    <a href="\index.php">| на главную |</a>
+    <a href="pattern\factory\index.php">| пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ |</a>
+    <a href="pattern\Factory2\index.php">| пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 2 |</a>
+    <a href="pattern\Factory3\index.php">| пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ |</a>
 </div>
 <div>
-    <a href="pattern\factory\index.php">| Паттерн фабрика |</a>
-    <a href="pattern\Factory2\index.php">| Паттерн фабрика 2 |</a>
-    <a href="pattern\Factory3\index.php">| Паттерн абстрактная фабрика |</a>
-</div>
-<div>
-    <a href="App/Di/index.php">DI Контейнер</a>
+    <a href="pattern\factory\index.php">| РџР°С‚С‚РµСЂРЅ С„Р°Р±СЂРёРєР° |</a>
+    <a href="pattern\Factory2\index.php">| РџР°С‚С‚РµСЂРЅ С„Р°Р±СЂРёРєР° 2 |</a>
+    <a href="pattern\Factory3\index.php">| РџР°С‚С‚РµСЂРЅ Р°Р±СЃС‚СЂР°РєС‚РЅР°СЏ С„Р°Р±СЂРёРєР° |</a>
 </div>
 <a href="Vue/Start/index.html">| VUE Start |</a>
 <a href="Vue/Start2/index.html">| VUE Start 2 |</a>
-<a href="Vue/Test1/index.html">| VUE тест 1 |</a>
-<a href="Vue/Test3/index.html">| VUE массивы |</a>
-<a href="Vue/Test4/index.html">| VUE жизненный цикл |</a>
-<a href="Vue/Test5/index.html">| VUE элементы формы |</a>
+<a href="Vue/Test1/index.html">| VUE пїЅпїЅпїЅпїЅ 1 |</a>
+<a href="Vue/Test3/index.html">| VUE пїЅпїЅпїЅпїЅпїЅпїЅпїЅ |</a>
+<a href="Vue/Test4/index.html">| VUE пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ |</a>
+<a href="Vue/Test5/index.html">| VUE пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ |</a>
 <div>
 </div>
-<a href="Loger/index.php">| Логер |</a>
+<a href="Loger\index.php">| Р›РѕРіРµСЂ |</a>
 <div>
 </div>
 <a href="api/index.php">| API |</a>
 <div>
 </div>
-<a href="MyArray/index.php"><b>| ARRAY |</b></a>
+<a href="MyArray/index.php">| ARRAY |</a>
 <a href="MyArray/cate8Ex1.php">| Cate 8. Example 1. |</a>
 <a href="MyArray/cate8Ex2.php">| Cate 8. Example 2. |</a>
 <a href="MyArray/cate8Ex3.php">| Cate 8. Example 3. |</a>
@@ -113,7 +112,7 @@
 <a href="MyArray/cate7Ex52.php">| Cate 7. Example 52. |</a>
 <a href="MyArray/cate7Ex53.php">| Cate 7. Example 53. |</a>
 <a href="MyArray/cate7Ex54.php">| Cate 7. Example 54. |</a>
-<a href="MyArray/cate7Ex55.php">| Cate 7. Example 55. (не решил) |</a><br>
+<a href="MyArray/cate7Ex55.php">| Cate 7. Example 55. (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ) |</a><br>
 <a href="MyArray/cate7Ex56.php">| Cate 7. Example 56. |</a>
 <a href="MyArray/cate7Ex57.php">| Cate 7. Example 57. |</a>
 <a href="MyArray/cate7Ex58.php">| Cate 7. Example 58. |</a>
@@ -141,8 +140,13 @@
 <a href="MyArray/Cate6/cate6Ex5.php">| Cate 6. Example 5. |</a>
 <div>
 <div>
-    <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
+    <a href="Tasks/task2.php">| front Р·Р°СЏРІРєРё РЅР° РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РѕРїС‹С‚Р° РїРµРґР°РіРѕРіРѕ |</a>
 </div>
+<div>
+    <a href="front/SitesFoto/index.php">| РЎР°Р№С‚ С„РѕС‚Рѕ |</a>
+</div>
+
+
 
 </div>
 </body>

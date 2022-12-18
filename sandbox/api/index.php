@@ -7,19 +7,19 @@ include_once($_SERVER['DOCUMENT_ROOT'] . 'sandbox/init.php');
 echo 'json!<br>';
 
 $j = DTOApi::create('Viktor', 12);
-//echo json_encode($j->jsonSerialize());
+echo json_encode($j->jsonSerialize());
 echo '<br>';
 
 // создание запроса
-//$requst =[
-//    'trackingId'=> 'UCB-1000001575',
-//    'type' => 'statusChanged',
-//
-//        ];
+$requst =[
+    'trackingId'=> 'UCB-1000001575',
+    'type' => 'statusChanged',
+
+        ];
 
 
-//$res =  \api\SendRequestJson::create('http://test.loc/sandbox/api/respons.php', $requst);
-//echo  $res;
+$res =  \api\SendRequestJson::create('http://test.loc/sandbox/api/respons.php', $requst);
+echo  $res;
 
 $data = ["name" => "John Smith", "age" => 35];
 $data_string = json_encode ($data, JSON_UNESCAPED_UNICODE);
@@ -36,6 +36,6 @@ $result = curl_exec($curl);
 curl_close($curl);
 echo '<pre>';
 print_r($result);
-
+echo '</pre>';
 
 
