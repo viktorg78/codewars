@@ -81,9 +81,9 @@
                 регистрация
             </div>
         </a>
-        <a class="nav-item nav-link vikA" href="#">
+        <a class="nav-item nav-link vikA" href="autorizacia.php">
             <div class="vikABlok">
-                меню 3
+                Авторизация
             </div>
         </a>
 
