@@ -283,3 +283,6 @@ body{
     height: 0;
 }
 
+.is-invalid:focus, .is-valid:focus {
+    background-color: #F3E9D0;
+}

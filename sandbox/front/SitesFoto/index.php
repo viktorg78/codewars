@@ -78,9 +78,9 @@
                         Личный кабинет
                     </div>
                 </a>
-                <a class="nav-item nav-link vikA" href="#">
+                <a class="nav-item nav-link vikA" href="registr.php">
                     <div class="vikABlok">
-                        меню 2
+                        регистрация
                     </div>
                 </a>
                 <a class="nav-item nav-link vikA" href="#">
