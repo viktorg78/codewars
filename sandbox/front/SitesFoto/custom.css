@@ -18,6 +18,8 @@ body{
     font-size: 1rem;
 }
 
+
+
 .vikHeader{
     background-color: #B05C5C;
 }
@@ -231,6 +233,24 @@ body{
 .vikButton:hover {
     border: 3px solid #B05C5C;
   margin: 0;
+}
+
+.vikButton2 {
+    background-color: #F3E9D0;
+    color: #B05C5C;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #B05C5C;
+    font-family: Montserrat-Medium, serif;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin: 1px;
+}
+.vikButton2:hover {
+    border: 3px solid #B05C5C;
+    margin: 0;
 }
 /* конец форма текста*/
 

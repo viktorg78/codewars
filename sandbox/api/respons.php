@@ -4,9 +4,9 @@ header("Access-Control-Allow-Methods: *");
 header("Content-Type: application/json");
 
 
-//$requestParams = [];
-//$url = $_SERVER['REQUEST_URI'];
-//$method =  $_SERVER['REQUEST_METHOD'];
-//$requestParams = $_POST['trackingId'];
+$requestParams = [];
+$url = $_SERVER['REQUEST_URI'];
+$method =  $_SERVER['REQUEST_METHOD'];
+$requestParams = $_POST['trackingId'];
 $respons =   $_POST;
 echo json_encode($respons);

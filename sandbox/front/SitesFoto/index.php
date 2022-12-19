@@ -88,6 +88,11 @@
                         Авторизация
                     </div>
                 </a>
+                <a class="nav-item nav-link vikA" href="listCatalog.php">
+                    <div class="vikABlok">
+                        список каталогов
+                    </div>
+                </a>
 
             </div>
     </nav>
