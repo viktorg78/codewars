@@ -141,6 +141,7 @@
 <div>
 <div>
     <a href="Tasks/task2.php">| front заявки на представление опыта педагого |</a>
+    <a href="front/full/index.php">| Сайт на весь экран |</a>
 </div>
 <div>
     <a href="front/SitesFoto/index.php">| Сайт фото |</a>
