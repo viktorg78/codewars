@@ -102,99 +102,65 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
-
-                <a href="folderPlus.php" class="vikA2" title="Добавить альбом"><i class="bi bi-folder-plus"></i></a>
-
-
-        </div>
-    </div>
-    <div class="row">
         <div class="col-12">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Названия</th>
-                <th scope="col">Хештеги</th>
-                <th scope="col">Колличество</th>
-                <th scope="col">Лайки</th>
-                <th scope="col"></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Фото зверюшек</td>
-                <td>Природа</td>
-                <td>10</td>
-                <td>5</td>
-                <td>
-                    <a href="#" title="Удалить каталог" class="vikA"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="bi bi-folder-x"></i>
-                    </a>
-                </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Фото зверюшек</td>
-                    <td>Природа</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>
-                        <a href="#" title="Удалить каталог" class="vikA">
-                            <i class="bi bi-folder-x"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Фото зверюшек</td>
-                    <td>Природа</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>
-                        <a href="#" title="Удалить каталог" class="vikA">
-                            <i class="bi bi-folder-x"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Фото зверюшек</td>
-                    <td>Природа</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>
-                        <a href="#" title="Удалить каталог" class="vikA">
-                            <i class="bi bi-folder-x"></i>
-                        </a>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
-
-            <!-- Модальное окно -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Удаление</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            <div class="w-25 mx-auto text-center">
+                <form>
+                    <div class="text-field text-field_floating">
+                        <input class="text-field__input form-control" type="text" id="textLogin" placeholder="">
+                        <label class="text-field__label" for="textLogin">Название альбома</label>
+                        <p>Придумайте название фото альбома</p>
+                    </div>
+                    <div class="row vikBorderBlok my-1" >
+                        <div class="col-12">
+                            Тема изображения<p></p>
                         </div>
-                        <div class="modal-body">
-                            Удалить каталог "Фото зверюшек"?
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Дети
+                                </label>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="vikButton2" data-bs-dismiss="modal">Нет</button>
-                            <button type="button" class="vikButton">Да</button>
+
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Пейзаш
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Природа
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="row vikBorderBlok my-1" >
+                        <div class="col-12">
+                            Тип изображания<p></p>
+                        </div>
+                        <div class="form-check">
+                            <div class="col-6">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Default radio
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <button type="submit" class="vikButton">Сохранить</button>
+                </form>
             </div>
-
-
         </div>
     </div>
 </div>
@@ -203,4 +169,5 @@
 
 </body>
 </html>
+
 

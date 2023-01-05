@@ -18,8 +18,6 @@ body{
     font-size: 1rem;
 }
 
-
-
 .vikHeader{
     background-color: #B05C5C;
 }
@@ -103,6 +101,14 @@ body{
 
 .vikNavbar{
     background-color:rgba(217, 193, 193, 0.5699999928474426);
+}
+.vikA2{
+    color: #B05C5C;
+    font-size: 2rem;
+}
+
+.vikA2:hover{
+    color: #845555;
 }
 .vikA{
     color: #B05C5C;
@@ -251,6 +257,7 @@ body{
 .vikButton2:hover {
     border: 3px solid #B05C5C;
     margin: 0;
+    color: #B05C5C;
 }
 /* конец форма текста*/
 
@@ -305,4 +312,42 @@ body{
 
 .is-invalid:focus, .is-valid:focus {
     background-color: #F3E9D0;
+}
+
+.form-check-input:checked{
+    background-color: #B05C5C;
+    border-color: #B05C5C;
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: 0.25rem;
+}
+
+.form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    margin-right: 1rem;
+    vertical-align: top;
+    background-color: #F3E9D0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #B05C5C;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    print-color-adjust: exact;
+}
+.form-check-label{
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+.vikBorderBlok{
+    border: 1px solid #B05C5C;
+
 }
