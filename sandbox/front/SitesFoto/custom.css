@@ -147,6 +147,7 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    outline: none;
 }
 
 .text-field__input[type="search"]::-webkit-search-decoration,
@@ -221,6 +222,11 @@ body{
     color: #B05C5C;
     font-size: 0.7rem;
     margin-left: 1rem;
+}
+
+.card-body p{
+    color: #B05C5C;
+    font-size: 0.7rem;
 }
 
 .vikButton {
@@ -322,6 +328,9 @@ body{
 .form-check-input[type="checkbox"] {
     border-radius: 0.25rem;
 }
+.form-check-input[type="radio"] {
+    border-radius: 50%;
+}
 
 .form-check-input {
     width: 1.5rem;
@@ -341,6 +350,7 @@ body{
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
     print-color-adjust: exact;
+    outline: none;
 }
 .form-check-label{
     margin-top: .25rem;
@@ -350,4 +360,16 @@ body{
 .vikBorderBlok{
     border: 1px solid #B05C5C;
 
+}
+
+textarea{
+    border: 2px solid #B05C5C;
+    border-radius: 0.25rem;
+    background-color: #F3E9D0;
+    background-size: contain;
+    outline: none;
+}
+.vikForm-control{
+    background-color: #F3E9D0;
+    border: none;
 }

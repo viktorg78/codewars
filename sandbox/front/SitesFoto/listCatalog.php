@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>Фронт фото</title>
@@ -16,11 +17,11 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 vikHeader1" ></div>
-        <div class="col-12 vikHeader" >
+        <div class="col-12 vikHeader1"></div>
+        <div class="col-12 vikHeader">
             <hr>
         </div>
-        <div class="col-12 vikHeader2" >
+        <div class="col-12 vikHeader2">
             <div class="row" style="height: 5rem">
                 <div class="col-auto">
                     <div class="d-flex h-100 justify-content-center align-items-center">
@@ -54,10 +55,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 vikHeader" >
+        <div class="col-12 vikHeader">
             <hr>
         </div>
-        <div class="col-12 vikHeader1" ></div>
+        <div class="col-12 vikHeader1"></div>
     </div>
 </div>
 <!--блок с меню-->
@@ -104,7 +105,7 @@
     <div class="row">
         <div class="col">
 
-                <a href="folderPlus.php" class="vikA2" title="Добавить альбом"><i class="bi bi-folder-plus"></i></a>
+            <a href="folderPlus.php" class="vikA2" title="Добавить альбом"><i class="bi bi-folder-plus"></i></a>
 
 
         </div>
@@ -114,26 +115,27 @@
             <table class="table table-hover">
                 <thead>
                 <tr>
-                <th scope="col">#</th>
-                <th scope="col">Названия</th>
-                <th scope="col">Хештеги</th>
-                <th scope="col">Колличество</th>
-                <th scope="col">Лайки</th>
-                <th scope="col"></th>
+                    <th scope="col">#</th>
+                    <th scope="col">Названия</th>
+                    <th scope="col">Хештеги</th>
+                    <th scope="col">Колличество</th>
+                    <th scope="col">Лайки</th>
+                    <th scope="col"></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                <th scope="row">1</th>
-                <td>Фото зверюшек</td>
-                <td>Природа</td>
-                <td>10</td>
-                <td>5</td>
-                <td>
-                    <a href="#" title="Удалить каталог" class="vikA"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="bi bi-folder-x"></i>
-                    </a>
-                </td>
+                    <th scope="row">1</th>
+                    <td><a href="folder.php">Фото зверюшек</a></td>
+                    <td>Природа</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>
+                        <a href="#" title="Удалить каталог" class="vikA" data-bs-toggle="modal"
+                           data-bs-target="#exampleModal">
+                            <i class="bi bi-folder-x"></i>
+                        </a>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">1</th>
@@ -176,12 +178,14 @@
             </table>
 
             <!-- Модальное окно -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Удаление</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Закрыть"></button>
                         </div>
                         <div class="modal-body">
                             Удалить каталог "Фото зверюшек"?
@@ -199,7 +203,9 @@
     </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

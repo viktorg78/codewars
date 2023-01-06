@@ -125,8 +125,8 @@
 
                         <div class="col-6">
                             <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
                                     Пейзаш
                                 </label>
                             </div>
@@ -134,8 +134,8 @@
 
                         <div class="col-6">
                             <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3">
                                     Природа
                                 </label>
                             </div>
@@ -145,19 +145,38 @@
                         <div class="col-12">
                             Тип изображания<p></p>
                         </div>
-                        <div class="form-check">
-                            <div class="col-6">
+                        <div class="col-6">
+                            <div class="form-check text-start">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
-                                    Default radio
+                                    Белый
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Прозрачный
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1">
+                                <label class="form-check-label" for="exampleRadios3">
+                                    Зеленый
                                 </label>
                             </div>
                         </div>
                     </div>
 
+                    <div class="form-group text-field_floating">
+                        <label class="vikForm-control pt-2 pb-0" for="exampleFormControlTextarea1">Хештэги</label>
+                        <textarea class="w-100 px-2"  id="exampleFormControlTextarea1" rows="3"></textarea>
 
-
-
+                        <p>Впишите хештэги через запятую.</p>
+                    </div>
                     <button type="submit" class="vikButton">Сохранить</button>
                 </form>
             </div>
