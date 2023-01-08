@@ -373,3 +373,12 @@ textarea{
     background-color: #F3E9D0;
     border: none;
 }
+.vikBlur{
+    background-color: rgba(243,233,208,50%);
+    border-top-left-radius: 15%;
+}
+
+.vikBlur2{
+    background-color: rgba(243,233,208,50%);
+    border-top-right-radius: 15%;
+}
