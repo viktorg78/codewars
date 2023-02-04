@@ -112,20 +112,22 @@
     </div>
 
 <!--    залайканые фото-->
-    <div class="row">
+    <div class="row" id="appVue">
         <div class="col-2">
             <div class="card m-1 position-relative">
                 <div class="position-relative">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
                     <div class="position-absolute bottom-0 start-0 vikBlur2 p-1">
-<!--                        <i class="bi bi-star-fill"></i> фото понравилось-->
-                        <i class="bi bi-star"></i>
+<!--                        понравилось или не понравилось-->
+                        <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)"></i>
+                        <i v-else class="bi bi-star" v-on:click="Star(false)"></i>
                     </div>
                     <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-hand-thumbs-down"></i>
+<!--                        <i class="bi bi-hand-thumbs-down"></i>-->
 <!--                    <i class="bi bi-hand-thumbs-down-fill"></i>  поставили дизлайк-->
-                        <i class="bi bi-hand-thumbs-up"></i> 10
-<!--                    <i class="bi bi-hand-thumbs-up-fill"></i> поставленный лайк-->
+                        <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)"></i>
+                        <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)"></i>
+                        {{likee}}
 
                     </div>
                 </div>
@@ -245,5 +247,37 @@
 <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var appVue = new Vue({
+        el: '#appVue',
+        data: {
+            star: false,
+            likee: 10,
+            likeeUp: false,
+        },
+        methods: {
+            Star: function (event){
+                if (event)
+                    this.star = false;
+                else
+                    this.star = true;
+            },
+            LikeeUp: function (event){
+               if(event){
+                   this.likee--;
+                   this.likeeUp = false
+               }
+               else {
+                   this.likee++;
+                   this.likeeUp = true;
+               }
+            }
+        },
+    });
+</script>
+
 </body>
 </html>
+
