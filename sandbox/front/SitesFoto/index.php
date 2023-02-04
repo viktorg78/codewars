@@ -107,7 +107,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12" style="background-color: #2fc6f7">
-            поиск
+            Черно-белая фотография
+            Концептуальная фотография
+            Туристическая фотография
+            Пейзажная фотография
+            Рекламная фотография
+            Свадебная фотография
+            HDR-фотография 
+            Фэшн-фотографи
         </div>
     </div>
 
@@ -119,14 +126,14 @@
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
                     <div class="position-absolute bottom-0 start-0 vikBlur2 p-1">
 <!--                        понравилось или не понравилось-->
-                        <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)"></i>
-                        <i v-else class="bi bi-star" v-on:click="Star(false)"></i>
+                        <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)" style="cursor: pointer"></i>
+                        <i v-else class="bi bi-star" v-on:click="Star(false)" style="cursor: pointer"></i>
                     </div>
                     <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
 <!--                        <i class="bi bi-hand-thumbs-down"></i>-->
 <!--                    <i class="bi bi-hand-thumbs-down-fill"></i>  поставили дизлайк-->
-                        <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)"></i>
-                        <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)"></i>
+                        <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)" style="cursor: pointer"> </i>
+                        <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)" style="cursor: pointer"></i>
                         {{likee}}
 
                     </div>

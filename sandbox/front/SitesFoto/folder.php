@@ -113,9 +113,9 @@
                     <p class="card-text">
                         <i class="bi bi-stars"></i> 10
                         &nbsp;&nbsp;
-                        <i class="bi bi-box-arrow-up-right" title="На весь экран"></i>
+                        <i class="bi bi-box-arrow-up-right" title="На весь экран" style="cursor: pointer"></i>
                         &nbsp;&nbsp;
-                        <i class="bi bi-trash3" title="Удалить"></i>
+                        <i class="bi bi-trash3" style="cursor: pointer" title="Удалить"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                     </p>
                 </div>
             </div>
@@ -173,6 +173,26 @@
             </div>
         </div>
 
+    </div>
+</div>
+<!-- Модальное окно удаление -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Удаление</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                Удалить фото "Название фото"?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="vikButton2" data-bs-dismiss="modal">Нет</button>
+                <button type="button" class="vikButton">Да</button>
+            </div>
+        </div>
     </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
