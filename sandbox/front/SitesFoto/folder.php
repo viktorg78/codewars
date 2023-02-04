@@ -89,17 +89,24 @@
                 список каталогов
             </div>
         </a>
-
     </div>
+    <form class="d-flex ms-auto me-1">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Поиск</button>
+    </form>
 </nav>
 <!--конец меню-->
+<!--    хлебные крошки-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            шлебные крошки
+        <div class="col-12 pb-3">
+            <div style="color: #B05C5C; font-size: .7vw;">
+                <a class="a_bread_crumbs" href="#">Пункт 1</a> <i class="bi bi-caret-right-fill"></i> <a class="a_bread_crumbs" href="#">Пункт 2</a> <i class="bi bi-caret-right-fill"></i> Пункт 3
+            </div>
         </div>
     </div>
 </div>
+<!--    конец хлебные крошки-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">

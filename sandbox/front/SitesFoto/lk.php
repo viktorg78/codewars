@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
 <!--    подключаем vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
@@ -91,17 +91,24 @@
                 список каталогов
             </div>
         </a>
-
     </div>
+    <form class="d-flex ms-auto me-1">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Поиск</button>
+    </form>
 </nav>
 <!--конец меню-->
+<!--    хлебные крошки-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            шлебные крошки
+        <div class="col-12 pb-3">
+            <div style="color: #B05C5C; font-size: .7vw;">
+                <a class="a_bread_crumbs" href="#">Пункт 1</a> <i class="bi bi-caret-right-fill"></i> <a class="a_bread_crumbs" href="#">Пункт 2</a> <i class="bi bi-caret-right-fill"></i> Пункт 3
+            </div>
         </div>
     </div>
 </div>
+<!--    конец хлебные крошки-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-6">

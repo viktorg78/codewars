@@ -31,7 +31,6 @@
                         <div class="vikDeviz">
                             Сдесь текст для<br>девиза сайта
                         </div>
-
                     </div>
                 </div>
                 <div class="col-auto">
@@ -65,7 +64,6 @@
     </div>
 </div>
 <!--блок с меню-->
-
     <nav class="navbar navbar-expand vikNavbar">
             <div class="navbar-nav">
                 <a class="nav-item nav-link vikA active" href="index.php">
@@ -90,34 +88,30 @@
                 </a>
                 <a class="nav-item nav-link vikA" href="listCatalog.php">
                     <div class="vikABlok">
-                        список каталогов
+                        список каталогов пользователя
                     </div>
                 </a>
 
             </div>
+            <form class="d-flex ms-auto me-1">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Поиск</button>
+            </form>
     </nav>
 <!--конец меню-->
+
+<!--    хлебные крошки-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            шлебные крошки
+        <div class="col-12 pb-3">
+            <div style="color: #B05C5C; font-size: .7vw;">
+                <a class="a_bread_crumbs" href="#">Пункт 1</a> <i class="bi bi-caret-right-fill"></i> <a class="a_bread_crumbs" href="#">Пункт 2</a> <i class="bi bi-caret-right-fill"></i> Пункт 3
+            </div>
         </div>
     </div>
 </div>
+<!--    конец хлебные крошки-->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12" style="background-color: #2fc6f7">
-            Черно-белая фотография
-            Концептуальная фотография
-            Туристическая фотография
-            Пейзажная фотография
-            Рекламная фотография
-            Свадебная фотография
-            HDR-фотография 
-            Фэшн-фотографи
-        </div>
-    </div>
-
 <!--    залайканые фото-->
     <div class="row" id="appVue">
         <div class="col-2">
