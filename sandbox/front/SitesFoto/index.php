@@ -113,112 +113,98 @@
 <!--    конец хлебные крошки-->
 <div class="container-fluid">
 <!--    залайканые фото-->
-    <div class="row" id="appVue">
+    <div class="row" >
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="workCatalog.php">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 start-0 vikBlur2 p-1">
-<!--                        понравилось или не понравилось-->
-                        <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)" style="cursor: pointer"></i>
-                        <i v-else class="bi bi-star" v-on:click="Star(false)" style="cursor: pointer"></i>
-                    </div>
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-<!--                        <i class="bi bi-hand-thumbs-down"></i>-->
-<!--                    <i class="bi bi-hand-thumbs-down-fill"></i>  поставили дизлайк-->
-                        <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)" style="cursor: pointer"> </i>
-                        <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)" style="cursor: pointer"></i>
-                        {{likee}}
-
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Природа
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                   <p class="card-text text-center text-truncate" title="Название название название">
-                       Название название название
-                   </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="#">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-stars"></i> 10
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Иконки
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text text-center text-truncate" title="Название название название">
-                        Название название название
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="#">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-stars"></i> 10
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Название категории
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text text-center text-truncate" title="Название название название">
-                        Название название название
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="#">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-stars"></i> 10
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Название категории
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text text-center text-truncate" title="Название название название">
-                        Название название название
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="#">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-stars"></i> 10
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Название категории
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text text-center text-truncate" title="Название название название">
-                        Название название название
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-2">
-            <div class="card m-1 position-relative">
-                <div class="position-relative">
+            <a href="#">
+                <div class="card m-1">
                     <img src="image/1.jpg"  class="card-img-top w-100" alt="Название фото">
-                    <div class="position-absolute bottom-0 end-0 p-1 vikBlur">
-                        <i class="bi bi-stars"></i> 10
+                    <div class="card-body">
+                        <p class="card-text text-center text-truncate" title="Название название название">
+                            Название категории
+                        </p>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text text-center text-truncate" title="Название название название">
-                        Название название название
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 <!--    случайные фотки. 12 * 3-->
-   <div class="row">
-       <div class="col-1 my-1">
-           <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+   <div class="row" id="appVue">
+       <div class="col-1">
+           <div class="position-relative">
+               <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+               <div class="position-absolute bottom-0 start-0 vikBlur2">
+                   <!--                        понравилось или не понравилось-->
+                   <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)" style="cursor: pointer"></i>
+                   <i v-else class="bi bi-star" v-on:click="Star(false)" style="cursor: pointer"></i>
+               </div>
+               <div class="position-absolute bottom-0 end-0 vikBlur">
+                   <!--                        <i class="bi bi-hand-thumbs-down"></i>-->
+                   <!--                    <i class="bi bi-hand-thumbs-down-fill"></i>  поставили дизлайк-->
+                   <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)" style="cursor: pointer"> </i>
+                   <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)" style="cursor: pointer"></i>
+                   {{likee}}
+               </div>
+           </div>
        </div>
        <div class="col-1 my-1">
            <img src="image/1.jpg" alt="Название" class="img-thumbnail">
