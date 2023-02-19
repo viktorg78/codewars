@@ -11,10 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
-    <!--    <link rel="preconnect" href="https://fonts.gstatic.com">-->
-    <!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>Фронт фото</title>
 </head>
@@ -117,6 +114,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
+            <hr>
             <h3>Фильтр</h3>
         </div>
 
@@ -159,11 +157,49 @@
         <div class="col-4">
             <h5>Еще тема</h5>
         </div>
-
-
+        <div class="col-12 text-center">
+            <input type="button" value="Применить фильтр" class="btn btn-primary mt-2">
+            <hr>
+        </div>
     </div>
 </div>
 <!--конец фильтр-->
+<!--    случайные фотки. 12 * 3-->
+<div class="row" id="appVue">
+    <div class="col-1">
+        <div class="position-relative">
+            <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+            <div class="position-absolute bottom-0 start-0 vikBlur2">
+                <!--                        понравилось или не понравилось-->
+                <i v-if="star" class="bi bi-star-fill" v-on:click="Star(true)" style="cursor: pointer"></i>
+                <i v-else class="bi bi-star" v-on:click="Star(false)" style="cursor: pointer"></i>
+            </div>
+            <div class="position-absolute bottom-0 end-0 vikBlur">
+                <!--                        <i class="bi bi-hand-thumbs-down"></i>-->
+                <!--                    <i class="bi bi-hand-thumbs-down-fill"></i>  поставили дизлайк-->
+                <i v-if="likeeUp"  class="bi bi-hand-thumbs-up-fill" v-on:click="LikeeUp(true)" style="cursor: pointer"> </i>
+                <i  v-else class="bi bi-hand-thumbs-up" v-on:click="LikeeUp(false)" style="cursor: pointer"></i>
+                {{likee}}
+            </div>
+        </div>
+    </div>
+    <div class="col-1 my-1">
+        <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+    </div>
+    <div class="col-1 my-1">
+        <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+    </div>
+    <div class="col-1 my-1">
+        <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+    </div>
+    <div class="col-1 my-1">
+        <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+    </div>
+    <div class="col-1 my-1">
+        <img src="image/1.jpg" alt="Название" class="img-thumbnail">
+    </div>
+
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -175,6 +211,35 @@
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var appVue = new Vue({
+        el: '#appVue',
+        data: {
+            star: false,
+            likee: 10,
+            likeeUp: false,
+        },
+        methods: {
+            Star: function (event){
+                if (event)
+                    this.star = false;
+                else
+                    this.star = true;
+            },
+            LikeeUp: function (event){
+                if(event){
+                    this.likee--;
+                    this.likeeUp = false
+                }
+                else {
+                    this.likee++;
+                    this.likeeUp = true;
+                }
+            }
+        },
+    });
+</script>
 
 </body>
 </html>
