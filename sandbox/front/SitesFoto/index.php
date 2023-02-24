@@ -221,9 +221,7 @@
        <div class="col-1 my-1">
            <img src="image/1.jpg" alt="Название" class="img-thumbnail">
        </div>
-
    </div>
-
 </div>
 
 

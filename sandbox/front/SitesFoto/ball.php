@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
-<!--    подключаем vue-->
+    <!--    подключаем vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
     <title>Фронт фото</title>
 </head>
@@ -113,14 +113,14 @@
     <!--блок с меню в личном кабинете-->
 
     <nav class="navbar navbar-expand mb-2">
-        <div class="navbar-brand ps-5">Мой профиль</div>
+        <div class="navbar-brand ps-5">Мои баллы</div>
         <data class="d-flex ms-auto me-1">
-            <a class="nav-item nav-link vikA active" href="lk.php">
+            <a class="nav-item nav-link vikA " href="lk.php">
                 <div class="vikABlok">
                     Профиль
                 </div>
             </a>
-            <a class="nav-item nav-link vikA " href="ball.php">
+            <a class="nav-item nav-link vikA active" href="ball.php">
                 <div class="vikABlok">
                     Баллы
                 </div>
@@ -129,55 +129,7 @@
     </nav>
     <!--конец меню в личном кабинете-->
     <div class="row">
-        <div class="col-6">
-            <div class="container w-75">
-                <form>
-                        <div class="text-field text-field_floating">
-                            <input class="text-field__input form-control is-valid" type="text" id="textLogin" placeholder="">
-                            <label class="text-field__label" for="textLogin">Логин:</label>
-                            <p>(логин для входа в банк изображений)</p>
-                        </div>
-                        <div class="text-field text-field_floating">
-                            <input class="text-field__input form-control is-invalid" type="text" id="textName" placeholder="">
-                            <label class="text-field__label" for="textName">Имя:</label>
-                            <p>(имя будут подписыватся ваши работы)</p>
-                        </div>
-                        <div class="text-field text-field_floating">
-                            <input class="text-field__input" type="email" id="textEmail" placeholder="">
-                            <label class="text-field__label" for="textEmail">Email:</label>
-                            <p>(для связи с вами)</p>
-                        </div>
-                        <br>
-                        <div class="text-field text-field_floating">
-                            <input class="text-field__input" type="password" id="textPwd1" placeholder="">
-                            <label class="text-field__label" for="textPwd1">Пароль 1:</label>
-                            <p>(Для смены пароля)</p>
-                        </div>
-                        <div class="text-field text-field_floating">
-                            <input class="text-field__input" type="password" id="textPwd2" placeholder="">
-                            <label class="text-field__label" for="textPwd2">Пароль 2:</label>
-                            <p>(Повторите пароль)</p>
-                        </div>
-                        <button type="submit" class="vikButton">СОХРАНИТЬ</button>
-                </form>
-            </div>
-
-
-        </div>
-        <div class="col-6">
-            <img src="image/1.jpg" class="vikAvatarImg img-fluid w-75"/>
-            <p></p>
-            <div class="text-field text-field_floating">
-                <label class="vikInput-file" id="app">
-                    <span class="vikInput-file-text form-control is-invalid" type="text">{{message}}</span>
-                    <input type="file" name="file" v-on:change="previewFiles">
-                    <span class="VikInput-file-btn">Выберите файл</span>
-                </label>
-                <p>Ваш аватар</p>
-            </div>
-
-
-        </div>
+        тут страница с баллами
     </div>
 </div>
 
@@ -199,4 +151,5 @@
 </script>
 </body>
 </html>
+
 
