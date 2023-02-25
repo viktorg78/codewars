@@ -438,3 +438,10 @@ textarea{
 .a_bread_crumbs:hover{
     color: #B05C5C;
 }
+
+h2{
+    color:#f3e9d0;
+    font-family: Montserrat-Medium, serif;
+    font-size:24px;
+    background-color: #B05C5C;
+}
