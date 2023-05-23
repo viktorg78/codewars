@@ -2,7 +2,6 @@
 use MyArray\Cate6\Example\Example7;
 include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
 ?>
-<p style="color: red">НЕ Решено!!!</p>
 <div>
     Данные: массив целых чисел, функция f двух переменных и начальное значение.<br>
     Пример: а = [2, 4, 6, 8, 10, 20], f(x, y) = x + y; инициализация = 0<br>
@@ -43,21 +42,19 @@ $startTime = microtime(true);// засекли время на выполнен�
 <b>Начало.</b><br>
 <?
 $a = [18, 69, -90, -78, 65, 40];
-
-$a1 = [0, 46, -46, 69, 33, -92, 8, 27, 67, 19];
 $r = [18, 3, 3, 3, 1, 1];
 myDamp($a);?>
 <b>ответ: </b><br>
 <?echo 'gcdi:';
-myDamp(Example7::oper_array('gcdi', $a1, 0));
+myDamp(Example7::oper_array('gcdi', $a, $a[0]));
 echo 'lcmu:';
 myDamp(Example7::oper_array('lcmu', $a, $a[0]));
 echo 'com:';
 myDamp(Example7::oper_array('com', $a, 0));
 echo 'min:';
-myDamp(Example7::oper_array('mini', $a, 18));
+myDamp(Example7::oper_array('mini', $a, $a[0]));
 echo 'max:';
-myDamp(Example7::oper_array('maxi', $a, 18));
+myDamp(Example7::oper_array('maxi', $a, $a[0]));
 //myDamp(Example7::gcdi(3, 65));
 ?>
 
