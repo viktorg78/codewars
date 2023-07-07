@@ -4,7 +4,8 @@ use MyArray\Cate6\Example\Example10;
 
 include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
 ?>
-<p style="color: red">Не решено!!!</p>
+<!--<p style="color: red">Не решено!!!</p>-->
+<p style="color: green; background-color: #D8E8F4; padding: 10px; border-radius: 10px;" >Решено!!!</p>
 <div>
     Вам дается секретное сообщение, которое необходимо расшифровать. Вот что вам нужно знать, чтобы расшифровать
     его:<br/><br/>
@@ -30,6 +31,7 @@ $startTime = microtime(true);// засекли время на выполнен�
 <b>Начало.</b><br>
 <?
 $str = '65 119esi 111dl 111lw 108dvei 105n 97n 111ka';
+$str = '82yade 115te 103o';
 
 myDamp($str);
 ?>
