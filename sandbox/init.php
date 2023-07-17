@@ -49,6 +49,40 @@ function myDampPrint(array $data)
 }
 
 /**
+ * Одномерный массив в 1 линию
+ * @param array $data
+ * @param string|null $name название массива
+ * @return void
+ */
+function myDampLine(array $data, string $name = null)
+{
+    if ($name) echo $name.' = ';
+    echo '[';
+    foreach ($data as $i => $val){
+        echo  ($i == count($data)-1) ? $val : $val.', ';
+    }
+    echo ']<br>';
+}
+
+/**
+ * Двумерный массив
+ * @param array $data
+ * @param string|null $name название массива
+ * @return void
+ */
+function myDampLine2(array $data, string $name = null){
+    $l = 0;
+    if ($name) {
+        $l = mb_strlen($name);
+        echo $name." = \t";
+    }
+    foreach ($data as $i => $val){
+        if ($l && $i) echo str_repeat("\t&nbsp;", $l+3);
+        myDampLine($val);
+    }
+}
+
+/**
  * Проверка на четное и нечетное число.
  * Если четное вернет true
  * @param $n int
