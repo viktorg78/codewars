@@ -4,8 +4,8 @@ use MyArray\Cate6\Example\Example14;
 
 include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
 ?>
-<p style="color: red">Не решено!!!</p>
-<!--<p style="color: green; background-color: #D8E8F4; padding: 10px; border-radius: 10px;">Решено!!!</p>-->
+<!--<p style="color: red">Не решено!!!</p>-->
+<p style="color: green; background-color: #D8E8F4; padding: 10px; border-radius: 10px;">Решено!!!</p>
 <div>
     <b>Введение</b><br/>
     Добро пожаловать, авантюрист. Ваша цель - пройти лабиринт и добраться до финиша, не касаясь стен. Это убьет вас
