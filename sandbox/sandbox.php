@@ -11,6 +11,7 @@
     Порождающие патерны<br>
     <a href="pattern\Singleton\index.php">| Одиночка (Singelton) |</a>
     <a href="pattern\Factory\index.php">| Фабрика (Factory) |</a>
+    <a href="pattern\FactoryMethod\index.php">| Фабричный метод (Factory method) |</a>
 </div>
 <div>
     <a href="Vue/Start/index.html">| VUE Start |</a>
