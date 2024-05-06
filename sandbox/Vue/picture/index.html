@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>картинки</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
+    <script src="/sandbox/dist/vue/2.7.16/vue.min.js"></script>
+<!--    \Bitrix\Main\UI\Extension::load("ui.vue");   подключить vue битрикса-->
+</head>
+<body>
+<div id="app">
+    <h2>{{message}}</h2>
+    <div><img :src="image" width="300"></div>
+    <div><button v-on:click="reverseMessage2">НАЗАД</button> <button v-on:click="reverseMessage1">ВПЕРЕД</button></div>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Загрузка картинок',
+            todos: [
+                "i1.jpg",
+                "i2.jpg",
+                "i3.jpg"
+            ],
+            image: "i1.jpg",
+            i:0,
+        },
+        methods: {
+            reverseMessage1: function (){
+                if (this.i<2) {
+                    this.i++
+                }
+                this.image = this.todos[this.i];
+            },
+            reverseMessage2: function (){
+                if (this.i>0) {
+                    this.i--
+                }
+                this.image = this.todos[this.i];
+            }
+        },
+    })
+</script>
+</body>
+</html>

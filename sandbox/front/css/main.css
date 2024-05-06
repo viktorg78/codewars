@@ -1,0 +1,20 @@
+.container {
+    Width: 900px;
+    Margin-left: auto;
+    Margin-right: auto;
+}
+.leftsidebar {
+    Float: left;
+    Width: 33%;
+    background-color: #4083B5;
+}
+.content {
+    Float: left;
+    Width: 33%;
+    background-color: #9bc40e;
+}
+.rightsidebar {
+    Float: left;
+    Width: 33%;
+    background-color: #4483B5;
+}

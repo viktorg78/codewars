@@ -24,6 +24,7 @@
     <a href="Vue/Test3/index.html">| VUE ������� |</a>
     <a href="Vue/Test4/index.html">| VUE ��������� ���� |</a>
     <a href="Vue/Test5/index.html">| VUE �������� ����� |</a>
+    <a href="Vue/picture/index.html">| VUE картинка |</a>
 </div>
 <div>
     <a href="Loger\index.php">| Логер |</a>
@@ -155,12 +156,21 @@
     <a href="front/full/index.php">| Сайт на весь экран |</a>
     <a href="front/Nav/index.php">| Меню |</a>
     <a href="front/Vert/index.php">| Вертскальная центровка |</a>
+    <a href="front/pageFlip/index.php">| Переворот страницы |</a>
+    <a href="front/function/index.php">| Тест функций |</a>
+    <a href="front/sandboxSite/index.php">| Тест страницы |</a>
 </div>
 <div>
     <a href="front/SitesFoto/index.php">| Сайт фото |</a>
 </div>
 <div>
     <a href="gluk/index.php">| глюк |</a>
+</div>
+<div>
+    <a href="webpak/index.html">| WebPack |</a>
+</div>
+<div>
+    <a href="NeuralNetwork/index.php">| нейросеть |</a>
 </div>
 <div style="background-color: #999999; text-align: center; border-radius: 10px">
     <p>Примеры</p>

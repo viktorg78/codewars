@@ -1,0 +1,54 @@
+body, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #444;
+	color: #333;
+	font-family: Helvetica, sans-serif;
+}
+
+#book {
+	background: url("book3.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	width: 900px;
+	height: 692px;
+	/*left: 50%;*/
+	/*top: 50%;*/
+	/*margin-left: -400px;*/
+	/*margin-top: -125px;*/
+}
+
+#pages section {
+	background: url("paper3.png") no-repeat;
+	background-size: 100%;
+	display: block;
+	width: 428px;
+	height: 673px;
+	position: absolute;
+	left: 466px;
+	top: 12px;
+	overflow: hidden;
+}
+	#pages section>div {
+		display: block;
+		width: 428px;
+		height: 673px;
+		font-size: 12px;
+	}
+	#pages section p,
+	#pages section h2 {
+		padding: 3px 35px;
+		line-height: 1.4em;
+		text-align: justify;
+	}
+	#pages section h2{
+		margin: 15px 0 10px;
+	}
+
+#pageflip-canvas {
+	position: absolute;
+	z-index: 100;
+}

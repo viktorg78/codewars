@@ -11,6 +11,7 @@
 
     <h3>{{ textSearch }} (длина: {{textSearch.length}})</h3>
     <input type="text" size="50" v-model="textSearch">
+    <input type="file"  v-bind:required   >
 
     <button type="button" v-on:click="getCities">Грузи города</button>
     <button type="button" v-on:click="getHashtages">Грузи хештеги</button>
