@@ -8,14 +8,8 @@
 <body>
 <div><h1>Песочница</h1></div>
 <div>
-    <a href="pattern\factory\index.php">| ������� ������� |</a>
-    <a href="pattern\Factory2\index.php">| ������� ������� 2 |</a>
-    <a href="pattern\Factory3\index.php">| ������� ����������� ������� |</a>
-</div>
-<div>
-    <a href="pattern\factory\index.php">| Паттерн фабрика |</a>
-    <a href="pattern\Factory2\index.php">| Паттерн фабрика 2 |</a>
-    <a href="pattern\Factory3\index.php">| Паттерн абстрактная фабрика |</a>
+    Порождающие патерны<br>
+    <a href="pattern\Singleton\index.php">| Одиночка (Singelton) |</a>
 </div>
 <div>
     <a href="Vue/Start/index.html">| VUE Start |</a>
