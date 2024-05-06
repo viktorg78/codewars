@@ -13,9 +13,3 @@ $connection2 = new Connection();
 var_dump($connection::getName());
 var_dump($connection2::getName());
 
-
-
-
-
-
-
