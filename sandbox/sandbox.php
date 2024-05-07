@@ -15,6 +15,7 @@
     <a href="pattern\StaticFactory\index.php">| Статическая фабрика (Static factory) |</a>
     <a href="pattern\AbstractFactory\index.php">| Абстрактная фабрика (Abstract factory) |</a>
     <a href="pattern\Builder\index.php">| Строитель (Builder) |</a>
+    <a href="pattern\Prototype\index.php">| Прототип (Prototype) |</a>
 </div>
 <div>
     <a href="Vue/Start/index.html">| VUE Start |</a>
