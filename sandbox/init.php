@@ -1,6 +1,6 @@
 <?
 
-// автозагрузка класов
+// Р°РІС‚РѕР·Р°РіСЂСѓР·РєР° РєР»Р°СЃРѕРІ
 function custom_autoloader($class)
 {
     $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
@@ -13,7 +13,7 @@ function custom_autoloader($class)
 spl_autoload_register('custom_autoloader');
 
 /**
- * Пока может работать с одинарными массивами
+ * РџРѕРєР° РјРѕР¶РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ СЃ РѕРґРёРЅР°СЂРЅС‹РјРё РјР°СЃСЃРёРІР°РјРё
  * @param $data mixed
  * @return void
  */
@@ -26,7 +26,7 @@ function myDamp($data)
             break;
         case 'array':
             if (count($data) == 0)
-                echo 'Пустой МАССИВ' . '<br>';
+                echo 'РџСѓСЃС‚РѕР№ РњРђРЎРЎРР’' . '<br>';
             else {
                 echo '<pre>';
                 print_r(array_map(function ($value) {
@@ -49,9 +49,9 @@ function myDampPrint(array $data)
 }
 
 /**
- * Одномерный массив в 1 линию
+ * РћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ РІ 1 Р»РёРЅРёСЋ
  * @param array $data
- * @param string|null $name название массива
+ * @param string|null $name РЅР°Р·РІР°РЅРёРµ РјР°СЃСЃРёРІР°
  * @return void
  */
 function myDampLine(array $data, string $name = null)
@@ -65,9 +65,9 @@ function myDampLine(array $data, string $name = null)
 }
 
 /**
- * Двумерный массив
+ * Р”РІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ
  * @param array $data
- * @param string|null $name название массива
+ * @param string|null $name РЅР°Р·РІР°РЅРёРµ РјР°СЃСЃРёРІР°
  * @return void
  */
 function myDampLine2(array $data, string $name = null){
@@ -83,8 +83,8 @@ function myDampLine2(array $data, string $name = null){
 }
 
 /**
- * Проверка на четное и нечетное число.
- * Если четное вернет true
+ * РџСЂРѕРІРµСЂРєР° РЅР° С‡РµС‚РЅРѕРµ Рё РЅРµС‡РµС‚РЅРѕРµ С‡РёСЃР»Рѕ.
+ * Р•СЃР»Рё С‡РµС‚РЅРѕРµ РІРµСЂРЅРµС‚ true
  * @param $n int
  * @return bool
  */
