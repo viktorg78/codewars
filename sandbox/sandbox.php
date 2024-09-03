@@ -26,6 +26,7 @@
     <a href="Vue/Test4/index.html">| VUE ��������� ���� |</a>
     <a href="Vue/Test5/index.html">| VUE �������� ����� |</a>
     <a href="Vue/picture/index.html">| VUE картинка |</a>
+    <a href="Vue/vueClass/index.html">| VUE компоненты |</a>
 </div>
 <div>
     <a href="Loger\index.php">| Логер |</a>
@@ -160,6 +161,7 @@
     <a href="front/pageFlip/index.php">| Переворот страницы |</a>
     <a href="front/function/index.php">| Тест функций |</a>
     <a href="front/sandboxSite/index.php">| Тест страницы |</a>
+    <a href="front/JSON/index.html">| Тест JSON |</a>
 </div>
 <div>
     <a href="front/SitesFoto/index.php">| Сайт фото |</a>
@@ -168,10 +170,17 @@
     <a href="gluk/index.php">| глюк |</a>
 </div>
 <div>
-    <a href="webpak/index.html">| WebPack |</a>
+    <a href="webpak/src/index.html">| WebPack |</a>
 </div>
 <div>
     <a href="NeuralNetwork/index.php">| нейросеть |</a>
+</div>
+<div>
+    <a href="JS/prog1/index.html">| JS 1 |</a>
+    <a href="JS/prog2/index.html">| JS 2 |</a>
+    <a href="JS/prog3/index.html">| JS 3 |</a>
+    <a href="JS/prog4/index.html">| JS 4 |</a>
+    <a href="JS/prog5/index.html">| JS 5 |</a>
 </div>
 <div style="background-color: #999999; text-align: center; border-radius: 10px">
     <p>Примеры</p>

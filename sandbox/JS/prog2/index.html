@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Преобразование типов</title>
+</head>
+<body>
+<h1>Преобразование типов</h1>
+<script>
+  "use strict";
+  let value = true;
+  alert(typeof value);
+  value = String(value);
+  alert(typeof value);
+  alert("6" / "2");
+  let str = "123";
+  alert(typeof str);
+  let num = Number(str);
+  alert(typeof num);
+  let age = Number("Это страка");
+  alert(age);
+  alert( Number("   123   ") ); // 123
+  alert( Number("123z") );      // NaN (ошибка чтения числа на месте символа "z")
+  alert( Number(true) );        // 1
+  alert( Number(false) );       // 0
+  alert( Boolean("0") ); // true
+  alert( Boolean(" ") ); // пробел это тоже true (любая непустая строка это true)
+</script>
+</body>
+</html>
