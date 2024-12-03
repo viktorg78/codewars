@@ -1,0 +1,23 @@
+.tableLife {
+    background-color: #C2DBED;
+    padding: 0;
+    margin: 0;
+}
+.imageLife {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+.tableLife td {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+}
+.imageButton {
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+}

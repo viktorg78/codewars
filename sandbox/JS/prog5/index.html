@@ -19,6 +19,32 @@
     let sayHi2 = function() {
         alert( "Привет" );
     };
+
+    function ask(question, yes, no){
+        if(confirm(question)) yes()
+        else no();
+    }
+    function showOk(){
+        alert('Вы согласны.');
+    }
+    function showNo(){
+        alert("Вы отменили выполнение.");
+    }
+
+    ask("вы согласны?", showOk, showNo);
+
+    // тоже самое но короче
+    function ask2(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    ask2(
+        "Вы согласны?",
+        function() { alert("Вы согласились."); },
+        function() { alert("Вы отменили выполнение."); }
+    );
+
 </script>
 
 </body>

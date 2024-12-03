@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объекты</title>
+</head>
+<body>
+<h1>Объекты</h1>
+<script>
+    'use struct'
+    let user1 = new Object(); // синтаксис "конструктор объекта"
+    let user2 = {}; // синтаксис "литерал объекта"
+    let user3 = {     // объект
+        name: "John",  // под ключом "name" хранится значение "John"
+        age: 30        // под ключом "age" хранится значение 30
+    };
+    alert(user3.name);
+    alert(user3.age);
+    user3.isAdmin = true; // добавить свойство
+    delete user3.age; //удалить свойство
+
+    let user4 = {
+        name: "John",
+        age: 30,
+        "likes birds": true  // имя свойства из нескольких слов должно быть в кавычках
+    };
+
+    let user5 = {};
+    // присваивание значения свойству
+    user5["likes birds"] = true;
+    // получение значения свойства
+    alert(user5["likes birds"]); // true
+    // удаление свойства
+    delete user5["likes birds"];
+
+    let user6 = {
+        name: "John",
+        age: 30,
+        isAdmin: true
+    };
+
+    for (let key in user6) {
+        // ключи
+        alert( key );  // name, age, isAdmin
+        // значения ключей
+        alert( user6[key] ); // John, 30, true
+    }
+</script>
+
+</body>
+</html>

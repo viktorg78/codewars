@@ -1,0 +1,136 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="/sandbox/dist/vue/2.7.16/vue.min.js"></script>
+    <title>Игра "цифра"</title>
+</head>
+<body>
+<div class="container" id="myContainer">
+    <div class="row align-items-start my-0" id="myTop">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="h1 text-center">Игра "цифра"</div>
+        </div>
+    </div>
+    <div class="row align-items-center my-0 h-100" style="background-color: #104410;">
+        <div class="col">
+            <div class="text-center" v-show="flag[0].btnStart">
+                <button v-on:click="startGame" class="btn btn-success btn-lg">START</button>
+            </div>
+            <div v-show="flag[0].textStart" class="text-center" style="color: red; font-size: 7em;">{{buttonStart}}</div>
+
+
+            <div v-show="flag[0].num" class="text-center" style="color: #D8E8F4; font-size: 8em;">
+                {{otobragenie(counter)}}
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+                <input v-model="mayOtvet" v-show="flag[0].otvet" type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="form-control form-control-lg w-25 m-1" placeholder="Ответ?">
+                <button v-on:click="rez" v-show="flag[0].otvet" type="button" class="btn btn-primary btn-lg m-1">Ввод</button>
+<!--                <p v-for="val in arr2">  [{{val}}]</p>-->
+<!--                ответ: {{sumAllArr(arr2)}}-->
+<!--                <button @click="show = !show">-->
+<!--                    Toggle-->
+<!--                </button>-->
+
+<!--                <transition name="fade">-->
+<!--                    <p v-if="show">hello</p>-->
+<!--                </transition>-->
+
+            </div>
+            <div v-show="flag[0].verno" class="text-center" style="color: #D8E8F4; font-size: 8em;">
+                ВЕРНО!
+                <p style="font-size: medium">
+                    Вы перешли на уровень {{level[levelN].id}}!
+                </p>
+            </div>
+            <div v-show="flag[0].error" class="text-center" style="color: #D8E8F4; font-size: 8em;">
+                ОШИБКА!
+                <p style="font-size: medium">
+                    Попробуй еще раз!
+                </p>
+            </div>
+            <div v-show="flag[0].gameOver" class="text-center" style="color: #D8E8F4; font-size: 8em;">
+                ВЫИГРАЛ!
+            </div>
+            <div v-show="flag[0].gameOver2" class="text-center" style="color: #D8E8F4; font-size: 8em;">
+                ПРОИГРАЛ!
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row align-items-end my-0" id="myBody">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="row">
+                <div class="col-4">
+                    <div>Уровень {{level[levelN].id}}</div>
+                </div>
+                <div class="col-3">
+                    <select v-model="complexity" class="form-control form-contro">
+                        <option selected value="1">Сложность 1</option>
+                        <option value="2">Сложность 2</option>
+                        <option value="3">Сложность 3</option>
+                        <option value="4">Сложность 4</option>
+                        <option value="5">Сложность 5</option>
+                        <option value="6">Сложность 6</option>
+                        <option value="7">Сложность 7</option>
+                        <option value="8">Сложность 8</option>
+                        <option value="9">Сложность 9</option>
+                        <option value="10">Сложность 10</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex flex-row">
+                        <div class="mx-1">
+                            <img v-if="flag[1].life1" src="heart-fill.svg" width="25" alt="жизнь">
+                            <img v-else src="heartbreak-fill.svg" width="25" alt="жизнь">
+                        </div>
+                        <div class="mx-1">
+                            <img v-if="flag[1].life2" src="heart-fill.svg" width="25" alt="жизнь">
+                            <img v-else src="heartbreak-fill.svg" width="25" alt="жизнь">
+                        </div>
+                        <div class="mx-1">
+                            <img v-if="flag[1].life3" src="heart-fill.svg" width="25" alt="жизнь">
+                            <img v-else src="heartbreak-fill.svg" width="25" alt="жизнь">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-2 text-left">
+                        <button v-on:click="sbros" class="btn btn-primary">Сброс</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="main.js"></script>
+<script>
+    const screenHeight = window.screen.height;
+    const screenBody = document.body.offsetHeight;
+    let myTop = document.getElementById('myTop').offsetHeight;
+    // let myTop2 = document.getElementById('myTop2').offsetHeight;
+    let myBody = document.getElementById('myBody').offsetHeight;
+    let myContainer = document.getElementById('myContainer');
+    // screenBody.style.height = screenHeight.toString()+'px';
+
+
+    let body = document.body
+    let html = document.documentElement
+
+    let height = Math.max( body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight )-myTop-myBody;
+    myContainer.style.height = height.toString()+'px';
+</script>
+</body>
+</html>
+
+

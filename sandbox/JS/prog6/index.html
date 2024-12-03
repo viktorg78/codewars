@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Стрелочные функции, основы</title>
+</head>
+<body>
+<h1>Стрелочные функции, основы</h1>
+<script>
+    "use struct"
+    let sum = (a,b)=>a+b;
+    /*
+        Эта стрелочная функция представляет собой более короткую форму:
+
+        let sum = function(a, b) {
+            return a + b;
+        };
+    */
+    alert(sum(2,4));
+
+    let diuble = a=>a*2;
+    alert(diuble(3));
+
+    let seyHi = ()=>alert('Hello!');
+    seyHi();
+
+    let age = prompt('Сколько вам лет', 18);
+    let welcom = (age < 18)?
+        ()=>alert('привет'):
+        ()=>alert('здравствуйте');
+    welcom();
+
+    let sum2 = (a, b) => {  // фигурная скобка, открывающая тело многострочной функции
+        let result = a + b;
+        return result; // если мы используем фигурные скобки, то нам нужно явно указать "return"
+    };
+
+    alert( sum2(1, 2) ); // 3
+
+    describe("pow", function() {
+
+        it("возводит в степень n", function() {
+            assert.equal(pow(2, 3), 8);
+        });
+
+    });
+</script>
+</body>
+</html>

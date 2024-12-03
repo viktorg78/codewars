@@ -1,0 +1,86 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="/sandbox/dist/vue/2.7.16/vue.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+    <title>Тетрис</title>
+</head>
+<body>
+<div class="container" id="myContainer">
+    <div class="row align-items-start my-0" id="myTop">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="h1 text-center">Тетрис</div>
+        </div>
+    </div>
+    <div class="row my-0 h-100 align-items-center justify-content-md-center" style="background-color: #104410;">
+        <div class="col-auto">
+            <table class="tableLife" v-if="renderComponent">
+                <tr v-for="(item, indexX) in gameField">
+                    <td v-for="(val, indexY ) in item">
+                        <img :src="outputCircle(val)" class="imageLife">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-auto h-100">
+            <div class="row">
+                <div class="col">
+                    <table class="tableLife mt-3" v-if="renderComponent">
+                        <tr v-for="(item, indexX) in gameFieldMin">
+                            <td v-for="(val, indexY ) in item">
+                                <img :src="outputCircle(val)" class="imageLife">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pt-2">
+                   <button class="btn btn-primary"><img class="imageButton" src="caret-left-square.svg" alt="в право"></button>
+                   <button class="btn btn-primary"><img class="imageButton" src="caret-right-square.svg" alt="в лево"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pt-2">
+                    <button class="btn btn-primary w-100"><img class="imageButton" src="caret-down-square.svg" alt="в лево"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row align-items-end my-0" id="myBody">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="row">
+                <div class="col-12">
+                    sss
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="main.js"></script>
+<script>
+    let myTop = document.getElementById('myTop').offsetHeight;
+    let myBody = document.getElementById('myBody').offsetHeight;
+    let myContainer = document.getElementById('myContainer');
+
+
+    let body = document.body
+    let html = document.documentElement
+
+    let height = Math.max( body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight )-myTop-myBody;
+    myContainer.style.height = height.toString()+'px';
+</script>
+</body>
+</html>
+
+

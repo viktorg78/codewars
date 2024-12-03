@@ -162,6 +162,10 @@
     <a href="front/function/index.php">| Тест функций |</a>
     <a href="front/sandboxSite/index.php">| Тест страницы |</a>
     <a href="front/JSON/index.html">| Тест JSON |</a>
+    <a href="front/game/index.html">| Игра "Цифра" |</a>
+    <a href="front/game2/index.html">| Игра "Жизнь" |</a>
+    <a href="front/game3/index.html">| Тетрис |</a>
+    <a href="front/openStreetMap/index.html">| Open Street Map |</a>
 </div>
 <div>
     <a href="front/SitesFoto/index.php">| Сайт фото |</a>
@@ -181,6 +185,17 @@
     <a href="JS/prog3/index.html">| JS 3 |</a>
     <a href="JS/prog4/index.html">| JS 4 |</a>
     <a href="JS/prog5/index.html">| JS 5 |</a>
+    <a href="JS/prog6/index.html">| JS 6 |</a>
+    <a href="JS/prog7/index.html">| JS 7 |</a>
+    <a href="JS/prog7/index.html">| JS 7 |</a>
+    <a href="JS/prog8/index.html">| JS прототипы |</a>
+    <a href="JS/prog9/index.html">| JS Контекст |</a>
+    <a href="JS/prog10/index.html">| JS Замыкание |</a>
+    <a href="JS/prog11/index.html">| JS асинхронность |</a>
+    <a href="JS/prog12/index.html">| JS Объекты |</a>
+    <a href="JS/prog13/index.html">| JS классы |</a>
+    <a href="JS/prog14/index.html">| JS Async, Await |</a>
+
 </div>
 <div style="background-color: #999999; text-align: center; border-radius: 10px">
     <p>Примеры</p>

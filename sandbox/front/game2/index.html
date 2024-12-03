@@ -1,0 +1,69 @@
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/sandbox/init.php');
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="/sandbox/dist/vue/2.7.16/vue.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+    <title>Игра "Жизнь"</title>
+</head>
+<body>
+<div class="container" id="myContainer">
+    <div class="row align-items-start my-0" id="myTop">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="h1 text-center">Игра "Жизнь"</div>
+        </div>
+    </div>
+    <div class="row align-items-center my-0 h-100 justify-content-md-center" style="background-color: #104410;">
+        <div class="col-auto">
+<!--            игровое пол-->
+            <table class="tableLife" v-if="renderComponent">
+                <tr v-for="(item, indexX) in gameField">
+                    <td v-for="(val, indexY ) in item">
+                        <img :src="outputCircle(val)" v-on:click="setXY(indexX,indexY)" class="imageLife">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row align-items-end my-0" id="myBody">
+        <div class="col py-4" style="background-color: #00FF00">
+            <div class="row">
+                <div class="col-10 text-left">
+<!--                    <button v-on:click="generation1" class="btn btn-primary">Рождение</button>-->
+<!--                    <button v-on:click="generation3" class="btn btn-primary">Снять пометку родителей</button>-->
+<!--                    <button v-on:click="generation2" class="btn btn-primary">2Смерть/жизнь</button>-->
+                    <button v-bind:disabled="buttonStart" v-on:click="startGame" class="btn btn-primary">Старт</button>
+                    <button v-bind:disabled="buttonStop" v-on:click="stopGame" class="btn btn-primary">Сброс</button>
+                    <button v-bind:disabled="buttonPause" v-on:click="pauseGame" class="btn btn-primary">Пауза</button>
+                </div>
+                <div class="col-2 text-left">
+                    Поколение: {{generation}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="main.js"></script>
+<script>
+    let myTop = document.getElementById('myTop').offsetHeight;
+    let myBody = document.getElementById('myBody').offsetHeight;
+    let myContainer = document.getElementById('myContainer');
+
+    let body = document.body
+    let html = document.documentElement
+
+    let height = Math.max( body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight )-myTop-myBody;
+    myContainer.style.height = height.toString()+'px';
+</script>
+</body>
+</html>
+
+
